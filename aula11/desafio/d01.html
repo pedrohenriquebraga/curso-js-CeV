@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+        }
+        input#pais {
+            font-size: 15px;
+            padding: 5px;
+            font-weight: lighter;
+        }
+        input#botao {
+            padding: 5px;
+            font-size: 15px;
+        }
+        p {
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Países</h1>
+    <input type="text" name="pais" id="pais" placeholder="País">
+    <input type="button" id="botao" value="Analisar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var country = document.getElementById('pais').value
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Vivendo em <strong>${country}</strong></p>`
+            if (country == 'Brasil') {
+                res.innerHTML += '<p>Você é <strong>Brasileiro</strong>!</p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro</strong>!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
