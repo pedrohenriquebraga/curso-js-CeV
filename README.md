@@ -14,3 +14,12 @@ Nesse curso foram passados os seguintes conteúdos:
 - Surgimento da Linguagem
 - Variáveis e Tipos Primitivos
 - Tratamento de dados
+- Operadores
+- DOM(Document Object Model)
+- Condicionais
+- Repetições
+- Variáveis Compostas
+
+## Por quê a dois cursos de JavaScript nesse perfil?
+
+Porque o outro curso de JavaScript é da **RocketSeat**, um canal do YouTube que ensina as maravilhas que a linguagem JavaScript pode fazer. Então o outro curso é mais avançado do que este, por isso não estão no mesmo repositório.
