@@ -10,3 +10,7 @@ Este repositório tem todas as aulas e os exercícios do curso. Está tudo compl
 ## Tudo que foi ensinado no curso
 
 Nesse curso foram passados os seguintes conteúdos:
+
+- Surgimento da Linguagem
+- Variáveis e Tipos Primitivos
+- Tratamento de dados
