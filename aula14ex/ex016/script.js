@@ -9,7 +9,7 @@ function contar() {
         let fim = Number(txtfim)
         let passo = Number(txtpas)
         if (passo == 0) {
-            alert('O passo não pode ser 0. Será considerado passo 1.')
+            alert('O valor do passo não pode ser 0. Será considerado passo com valor 1.')
             passo = 1
         }
         let res = document.getElementById('res')
