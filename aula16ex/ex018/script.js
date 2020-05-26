@@ -29,30 +29,29 @@ function adicionar() {
 }
 
 function finalizar() {
+    let soma = 0
+    let maior = menor = valores[0]
+
     if (valores.length != 0) {
-        let cont = maior = menor = soma = 0
         
         for (let pos in valores) {
             soma += valores[pos]
-            cont++
-            if (cont == 1) {
-                maior = menor = valores[pos]
-            } else {
-                if (valores[pos] > maior) {
-                    maior = valores[pos]
-                }
-                if (valores[pos] < menor) {
-                    menor = valores[pos]
-                }
+            if (valores[pos] > maior) {
+                maior = valores[pos]
+            }
+            if (valores[pos] < menor) {
+                menor = valores[pos]
             }
         }
-        let media = soma / valores.length
-        res.innerHTML += `<p>Ao todo, temos ${valores.length} números cadastrados</p>`
-        res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
-        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
-        res.innerHTML += `<p>Somando todos os valores, temos ${soma}</p>`
-        res.innerHTML += `<p>A média dos valores digitados é ${media.toFixed(2).replace('.', ',')}</p>`
-    } else {
+    }
+    else {
         alert('Digite ao menos 1 número para finalizar!!')
     }
+    let media = soma / valores.length
+    res.innerHTML += `<p>Ao todo, temos ${valores.length} números cadastrados</p>`
+    res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
+    res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+    res.innerHTML += `<p>Somando todos os valores, temos ${soma}</p>`
+    res.innerHTML += `<p>A média dos valores digitados é ${media.toFixed(2).replace('.', ',')}</p>`
+    
 }
